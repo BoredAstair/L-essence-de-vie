@@ -1,0 +1,294 @@
+:root {
+    --shadow-color: 41deg 32% 61%;
+    --shadow-elevation-low:
+      0.6px 0.7px 0.9px hsl(var(--shadow-color) / 0.37),
+      0.9px 1px 1.4px -1.6px hsl(var(--shadow-color) / 0.31),
+      2.3px 2.4px 3.4px -3.2px hsl(var(--shadow-color) / 0.26);
+    --shadow-elevation-medium:
+      0.6px 0.7px 0.9px hsl(var(--shadow-color) / 0.39),
+      1.6px 1.8px 2.4px -1.1px hsl(var(--shadow-color) / 0.34),
+      4.4px 4.8px 6.6px -2.2px hsl(var(--shadow-color) / 0.3),
+      11.3px 12.2px 16.8px -3.2px hsl(var(--shadow-color) / 0.25);
+    --shadow-elevation-high:
+      0.6px 0.7px 0.9px hsl(var(--shadow-color) / 0.41),
+      2.7px 2.9px 4px -0.5px hsl(var(--shadow-color) / 0.38),
+      5.4px 5.9px 8.1px -1.1px hsl(var(--shadow-color) / 0.36),
+      10.2px 11.1px 15.3px -1.6px hsl(var(--shadow-color) / 0.33),
+      18.5px 20.1px 27.7px -2.2px hsl(var(--shadow-color) / 0.3),
+      31.6px 34.3px 47.2px -2.7px hsl(var(--shadow-color) / 0.28),
+      51.1px 55.3px 76.2px -3.2px hsl(var(--shadow-color) / 0.25);
+  }
+
+@media only screen and (min-width: 600px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    nav{
+        background-color: #CCD5AE;
+        height: 10vh;
+    }
+    
+    #backimage{
+        height: 70vh;
+        width: 100%;
+        background-image:url(Images/background.jpg);
+        background-size: contain;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    #leftDecoration1, #rightDecoration1{
+        display: none;
+    }
+    
+    #splashscreen{
+        height: 90vh;
+        position: relative;
+    }
+    
+    #splashscreen #decoL{
+        position:absolute;
+        height: 100%;
+    }
+    
+    #texts{
+        width: 50%;
+    }
+    
+    #decoration{
+        position: absolute;
+        right: 10%;
+        aspect-ratio:auto;
+        height: auto;
+    }
+    
+    #aproposdeco{
+        height: 75vh;
+        background-image:url(Images/Apropos.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #apropostext{
+        width: 60%;
+        height: 80%;
+        border-radius: 20px;
+        background-color: #FEFAE075;
+        backdrop-filter: blur(20px);
+        padding: 0px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #apropostext h1{
+        font-size: 50px;
+    }
+    
+    #apropostext p{
+        font-size: 20px;
+    }
+    
+    #methode{
+        height: 70vh;
+        background-color: #ccd5ae;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap:30px
+    }
+    
+    #texts h1{
+        font-size: 50px;
+    }
+    
+    #texts p{
+        font-size: 20px;
+    }
+    
+    #elems{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 100px;
+    }
+    
+    .card>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    
+    .inelem{
+        border-radius: 1000px;
+        width: auto;
+        height: auto;
+    }
+    
+    .card{
+        background-color: #FEFAE0;
+        padding: 20px;
+        border-radius: 12px;
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: var(--shadow-elevation-medium);
+    }
+
+    .card img{
+        width: auto;
+    }
+    
+    #contact{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*========================================*/
+
+@media only screen and (max-width: 600px) {
+    html,body {
+      margin:0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    nav{
+        width: 100;
+        height: 10vh;
+        background-color: #CCD5AE;
+    }
+
+    #splashscreen{
+        height: 75vh;
+        background-image: url(Images/background.jpg);
+        background-size: cover;
+        position: relative;
+    }
+
+    #rightDecoration1{
+        position: absolute;
+        top: 0;
+        right: 0;
+        rotate: -90deg;
+    }
+
+    #leftDecoration1{
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+    }
+
+    #backimage{
+        background-color: #CCD5AE;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #backimage>#decoration{
+        display: none;
+    }
+
+    #texts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #methode{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #FEFAE0;
+    }
+
+    #elems{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: transparent;
+        gap:20px;
+        margin-bottom: 20px;
+    }
+
+    .card{
+        width: 40%;
+        height: 40%;
+        background-color: whitesmoke;
+        padding: 10px 0px;
+        box-shadow: var(--shadow-elevation-medium);
+    }
+
+    .card>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card h2{
+        font-size: 20px;
+    }
+
+    .card img{
+        width: 75%;
+        border-radius: 1000px;
+    }
+
+    #aproposdeco{
+        background-image: url(Images/Apropos.jpg);
+        height: 60vh;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    #apropostext{
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        background-color: #FEFAE075;
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding:30px;
+    }
+
+    #contact{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ccd5ae;
+    }
+  }
