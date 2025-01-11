@@ -27,30 +27,87 @@
     }
     
     nav{
-        background-color: #CCD5AE;
+        background-color: #212b2b;
         height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+
+    nav img{
+        height: 100%;
+    }
+
+    #logo{
+        height: 80%;
     }
     
     #backimage{
         height: 70vh;
         width: 100%;
         background-image:url(Images/background.jpg);
-        background-size: contain;
+        background-size: cover;
         position: relative;
         overflow: hidden;
         display: flex;
         justify-content: start;
         align-items: center;
-        padding-left: 10%;
+    }
+
+    #Naturobackimage{
+        height: 70vh;
+        width: 100%;
+        background-image:url(Images/Rbackground.jpg);
+        background-size: cover;
+        background-position:bottom left;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 
     #leftDecoration1, #rightDecoration1{
         display: none;
     }
+
+    #NaturoImage{
+        position: absolute;
+        width: 45%;
+        left: 0;
+        bottom: 0;
+    }
     
     #splashscreen{
-        height: 90vh;
+        height: 80vh;
         position: relative;
+        background-image: url(Images/BackSplash.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0vh 20vh;
+    }
+
+    #splashscreen div{
+        background-color: #FEFAE075;
+        backdrop-filter: blur(5px);
+        margin:0;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 10%;
+        text-align: center;
+    }
+
+    #splashscreen div h1{
+        font-size: 50px;
+    }
+    
+    #splashscreen div p{
+        font-size: 20px;
     }
     
     #splashscreen #decoL{
@@ -59,12 +116,21 @@
     }
     
     #texts{
+        position: absolute;
+        left: 5%;
         width: 50%;
+    }
+
+    #Naturotexts{
+        position: absolute;
+        right:5%;
+        width: 50%;
+        text-align: right;
     }
     
     #decoration{
         position: absolute;
-        right: 10%;
+        right: 5%;
         aspect-ratio:auto;
         height: auto;
     }
@@ -100,7 +166,7 @@
     }
     
     #methode{
-        height: 70vh;
+        height: 80vh;
         background-color: #ccd5ae;
         display: flex;
         align-items: center;
@@ -109,11 +175,11 @@
         gap:30px
     }
     
-    #texts h1{
+    #texts h1, #Naturotexts h1{
         font-size: 50px;
     }
     
-    #texts p{
+    #texts p, #Naturotexts p{
         font-size: 20px;
     }
     
@@ -122,14 +188,25 @@
         height: 70%;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 100px;
+    }
+
+    #methode h1{
+        font-size: 50px;
+        margin: 0;
+    }
+    
+    #methode p{
+        font-size: 20px;
+        margin: 0
     }
     
     .card>div{
         display: flex;
         flex-direction: column;
-        align-items: center;    
+        align-items: center;
+        width: auto;
     }
     
     .inelem{
@@ -142,8 +219,7 @@
         background-color: #FEFAE0;
         padding: 20px;
         border-radius: 12px;
-        width: auto;
-        height: auto;
+        width: min-content;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -151,7 +227,14 @@
     }
 
     .card img{
-        width: auto;
+        width: 250px;
+        aspect-ratio: 1/1;
+    }
+
+    .card h2{
+        text-align: center;
+        width: 75%;
+        font-size: medium;
     }
     
     #contact{
@@ -196,6 +279,12 @@
         position: absolute;
         bottom: -20px;
         left: -20px;
+    }
+
+    #NaturoImage{
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 
     #backimage{
