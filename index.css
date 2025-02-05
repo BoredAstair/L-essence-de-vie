@@ -347,7 +347,7 @@
     }
 
     #backimage{
-        height: auto;
+        height: 45vh;
         background-image: url(Images/background.jpg);
         background-size: cover;
         position: relative;
