@@ -258,14 +258,49 @@
     nav{
         width: 100;
         height: 10vh;
-        background-color: #CCD5AE;
+        background-color: #212b2b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo{
+        height: 80%;
     }
 
     #splashscreen{
-        height: 75vh;
-        background-image: url(Images/background.jpg);
+        background-image: url(Images/BackSplash.jpg);
+        background-position: center;
         background-size: cover;
-        position: relative;
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    hr{
+        position: absolute;
+        bottom: 0;
+        width: 30%;
+    }
+
+    #Naturotexts h1{
+        margin-top: 0;
+    }
+    
+    #splashscreen div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        background-color: #FEFAE075;
+        text-align: center;
+        width: 80%;
+        height: 50%;
+        border-radius: 10px;
     }
 
     #rightDecoration1{
@@ -287,24 +322,32 @@
         bottom: 0;
     }
 
-    #backimage{
-        background-color: #CCD5AE;
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #backimage>#decoration{
+    #backimage>#decoration, #NaturoImage{
         display: none;
     }
 
-    #texts{
+    #backimage{
+        height: 40vh;
+        background-image: url(Images/background.jpg);
+        background-size: cover;
+        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+        align-items: end;
+        justify-content: center;
+        padding:10px;
+        text-align: center;
+    }
+
+    #Naturobackimage{
+        height: 40vh;
+        background-image: url(Images/Rbackground.jpg);
+        background-size: cover;
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding:10px;
+        text-align: center;
     }
 
     #methode{
@@ -354,7 +397,7 @@
 
     #aproposdeco{
         background-image: url(Images/Apropos.jpg);
-        height: 60vh;
+        height: 75vh;
         display: flex;
         align-items:center;
         justify-content: center;
