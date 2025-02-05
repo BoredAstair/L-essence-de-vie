@@ -413,7 +413,7 @@
 
     #aproposdeco{
         background-image: url(Images/Apropos.jpg);
-        height: 75vh;
+        height: 85vh;
         display: flex;
         align-items:center;
         justify-content: center;
