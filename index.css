@@ -315,7 +315,7 @@
         background-color: #FEFAE075;
         text-align: center;
         width: 80%;
-        height: 50%;
+        height: auto;
         border-radius: 10px;
     }
     
@@ -347,7 +347,7 @@
     }
 
     #backimage{
-        height: 45vh;
+        height: auto;
         background-image: url(Images/background.jpg);
         background-size: cover;
         position: relative;
@@ -461,5 +461,19 @@
     #contact h2{
         margin: 10px;
         font-size: larger;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    #rightDecoration1, #leftDecoration1{
+        display: none;
+    }
+
+    #aproposdeco{
+        height: 120vh;
+    }
+
+    #contact{
+        height: 40vh;
     }
   }
