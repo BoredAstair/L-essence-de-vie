@@ -318,6 +318,10 @@
         height: 50%;
         border-radius: 10px;
     }
+    
+    #splashscreen h1{
+        margin: 5px;
+    }
 
     #rightDecoration1{
         position: absolute;
@@ -343,7 +347,7 @@
     }
 
     #backimage{
-        height: 40vh;
+        height: 45vh;
         background-image: url(Images/background.jpg);
         background-size: cover;
         position: relative;
@@ -355,7 +359,7 @@
     }
 
     #Naturobackimage{
-        height: 40vh;
+        height: 45vh;
         background-image: url(Images/Rbackground.jpg);
         background-size: cover;
         position: relative;
@@ -413,7 +417,7 @@
 
     #aproposdeco{
         background-image: url(Images/Apropos.jpg);
-        height: 85vh;
+        height: 95vh;
         display: flex;
         align-items:center;
         justify-content: center;
@@ -435,7 +439,7 @@
     #contact{
         width: auto;
         text-align: center;
-        height: 25vh;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         padding: 0% 20px;
